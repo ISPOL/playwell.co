@@ -1,8 +1,6 @@
-#Board{
-        position:absolute;
-        height:520px;
-        width:520px;
-        background-color:silver;
-
-        
+#.navbar{
+       background:url("../img/stickynav.png") no-repeat scroll 0% 0% / cover;
     }
+ html{
+  	background:"#000";
+  }
