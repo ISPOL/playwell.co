@@ -1,0 +1,1447 @@
+/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+a{
+  color: #EB6057;
+  text-decoration: none;
+}
+a:hover{
+  color: #CB3C3D;
+  text-decoration: none;
+}
+a.raised{
+  color: #FFFFFF;
+  letter-spacing: 2.6px;
+  line-height: 14px;
+  margin-top: 30px;
+  position: relative;
+  text-decoration: none;
+  background-color: #EB6057;
+  font-family: ProximaNova-Regular;
+  font-size: 13px;
+  display: block;
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 0px #CB3C3D;
+  -moz-box-shadow: 0px 3px 0px #CB3C3D;
+  box-shadow: 0px 3px 0px #CB3C3D;
+  text-align: center;
+  padding: 13px 0;
+  padding-top: 16px;
+
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -ms-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+}
+a.raised:hover {
+  background-color: #EF5050;
+}
+
+a.raised:active {
+  background-color: #CB3C3D;
+  -webkit-box-shadow: 0px 0px 0px #CB3C3D;
+  -moz-box-shadow: 0px 0px 0px #CB3C3D;
+  box-shadow: 0px 0px 0px #CB3C3D;
+  position: relative;
+  top: 3px;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url('../fonts/ProximaNova-Semibold.eot');
+  src: local('☺'), url('../fonts/ProximaNova-Semibold.woff') format('woff'), url('../fonts/ProximaNova-Semibold.ttf') format('truetype'), url('../fonts/ProximaNova-Semibold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ .font-semibold{ font-family:'ProximaNova-Semibold';}
+
+@font-face {
+  font-family: 'ProximaNova-RegularItalic';
+  src: url('../fonts/ProximaNova-RegularItalic.eot');
+  src: local('☺'), url('../fonts/ProximaNova-RegularItalic.woff') format('woff'), url('../fonts/ProximaNova-RegularItalic.ttf') format('truetype'), url('../fonts/ProximaNova-RegularItalic.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.font-regularIt{ font-family:'ProximaNova-RegularItalic';}
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: local('☺'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url('../fonts/ProximaNova-Light.eot');
+  src: local('☺'), url('../fonts/ProximaNova-Light.woff') format('woff'), url('../fonts/ProximaNova-Light.ttf') format('truetype'), url('../fonts/ProximaNova-Light.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.font-light{ font-family:'ProximaNova-Light';}
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: local('☺'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype'), url('../fonts/ProximaNova-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.font-bold{ font-family:'ProximaNova-Bold';}
+
+ul{padding: 0; margin: 0;}
+li{padding: 0; margin: 0;}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+  body{
+    overflow-x: hidden;
+    font-family: 'ProximaNova-Regular';
+    background-color: white;
+    background-size: cover;
+    font-size: 12px;
+  }
+  .stickynav{
+    background: url('../img/stickynav_back.png') no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    display: none;
+  }
+  .stickynav.mobile{
+    display: none !important;
+  }
+  .stickynav{
+    padding: 8px 0;
+  }
+  .stickynav a{
+    color: white;
+  }
+  .stickynav .logo img{
+    width: 50px;
+  }
+  .stickynav li{
+    line-height: 3;
+  }
+  .stickynav li a{
+    width: 35px;
+    font-family: 'ProximaNova-Regular';
+    padding: 2px 5px;
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .stickynav .scrollable a{
+    padding: 2px 10px;
+  }
+
+
+  .stickynav li img.threes{
+    width: 25px;
+  }
+  /*.stickynav .cta a{
+    border: 2px solid white;
+    width: 160px;
+    font-family: 'ProximaNova-Semibold';
+    display: block;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 1px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    line-height: 0;
+  }*/
+
+  @media (max-width: 600px) and (min-width: 520px){
+    .facet_sidebar {
+      /*display: none;*/
+    }
+  }
+  header {
+    width: 100%;
+    max-height: 800px;
+    background: url('../img/therazorcliffs_homepage.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+  }
+  header .cta{
+    width: 100%;
+    text-align: center;
+    background-color: #2D2D2D;
+    font-size: 13px;
+    color: #FFFFFF;
+    line-height: 16px;
+    padding: 12px 0;
+    padding-top: 15px;
+  }
+  header .cta a{
+    font-family: ProximaNova-Light;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 0 10px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+  }
+  header .cta a:hover{
+    color: #EF5050;
+    border: 1px solid #EF5050;
+  }
+  header nav .col-xs-6{
+    margin-top: 25px;
+  }
+
+  header nav .right ul{
+    margin-right: 15px;
+    margin-top: 25px;
+  }
+  header nav .right li a{
+    margin: 0;
+    padding: 0;
+    margin-left: -5px
+  }
+
+  header nav .right li img.threes{
+    -moz-transform:scale(0.6);
+    -webkit-transform:scale(0.6);
+    transform:scale(0.6);
+  }
+  header section{
+    z-index: 2;
+  }
+  header section.title{
+    text-align: center;
+    margin-top: 140px;
+  }
+  header section.title h1{
+    font-family: ProximaNova-Semibold;
+    font-size: 50px;
+    color: white;
+    line-height: 61px;
+    margin: 0;
+  }
+  header section.title h3{
+    font-family: ProximaNova-Regular;
+    font-size: 19px;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  header section.informed{
+    margin-top:80px;
+  }
+  header section.informed a{
+    width: 230px;
+    margin: 0 auto;
+  }
+  header section.arrow{
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    margin-left: -18px;
+  }
+  header section.credit{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    margin-right: 15px;
+  }
+  header section.credit a{
+    color: white;
+  }
+  header section.credit a:hover{
+    color: #CB3C3D;
+  }
+
+  .container-fluid{
+    padding: 0;
+    background: white;
+  }
+  .container-fluid.fixed{
+    margin-top: 370px;
+  }
+  .row{
+    padding: 0;
+    margin: 0;
+  }
+  section.second{
+    display: block;
+    width: 100%;
+    background-image: url("../img/Headline_Pattern_Backdrop.png");
+    background-repeat: no-repeat;
+    background-color: rgba(255, 136, 87, 0.59);
+    color: white;
+  }
+  section.second.fixed{
+    position: fixed;
+    top: -300px;
+  }
+
+  section.second img{
+    width: 100%;
+  }
+
+  section.second .group{
+    text-align: center;
+    width: 100%;
+    padding-top: 130px;
+    padding-bottom: 25px;
+  }
+  section.second .group h3{
+    font-family: ProximaNova-Regular;
+    line-height: 39px;
+    font-size: 33px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 95px;
+  }
+  section.second .group li{
+    font-family: ProximaNova-Bold;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 2.39px;
+    line-height: 14px;
+    padding: 0 22px;
+  }
+  section.second .group li:first-child{
+    padding-left: 0;
+  }
+  section.second .group li a{
+    color: white;
+  }
+  section.third{
+    display: block;
+    width: 100%;
+
+    padding-top: 25px;
+    padding-bottom: 60px;
+    background: url('../img/Culture_Illustrations.png') no-repeat;
+    background-size: cover;
+    background-color: #4D4E68;
+  }
+  section.third h1{
+    color: white;
+  }
+  section.third img{
+    width: 100%;
+  }
+  section.third p{
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: ProximaNova-Light;
+    font-size: 23px;
+    color: white;
+    line-height: 31px;
+  }
+  section.third p.first{
+    display: block;
+    padding-top: 40px;
+    margin-bottom: 30px;
+  }
+  section.third h2{
+    font-family: ProximaNova-Regular;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    margin-top: 60px;
+    font-weight: 100;
+  }
+
+  section.fourth{
+    display: block;
+    width: 100%;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  section.fourth .row div{
+    padding: 0;
+    margin: 0;
+  }
+  section.fourth img{
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+
+  section.fourth p{
+    display: inline-block;
+    font-family: ProximaNova-Regular;
+    font-size: 23px;
+    color: #191919;
+    line-height: 28px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  section.fourth a{
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  section.fifth{
+    display: block;
+    width: 100%;
+    background-color: #ffe3d0;
+    padding-bottom: 120px;
+    text-align: center;
+  }
+  section.fifth p{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-family: ProximaNova-Light;
+    font-size: 23px;
+    color: #191919;
+    line-height: 25px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+  }
+  section.fifth img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 20px;
+  }
+  section.fifth-courses{
+    display: block;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  section.fifth-courses .classes{
+    min-height: 350px;
+    max-height: 600px;
+    text-align: left;
+    color: white;
+    padding: 15px;
+    padding-left: 17px;
+    padding-right: 17px;
+    position: relative;
+    background: #5c6a85;
+  }
+  section.fifth-courses .classes .overview{
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  section.fifth-courses .classes .overview .wrapper{
+    padding: 15px;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  section.fifth-courses .classes .overview .wrapper .header{
+    display: inline-block;
+    margin: 0;
+    padding: 2px 8px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  section.fifth-courses .classes .overview .wrapper h1{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: ProximaNova-Regular;
+  }
+  section.fifth-courses .classes .overview .wrapper a{
+    font-family: ProximaNova-Light;
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 1;
+  }
+  section.fifth-courses .classes .overview .wrapper a:hover{
+    color: #CB3C3D;
+  }
+  section.fifth-courses .classes h2{
+    font-family: ProximaNova-Regular;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  section.fifth-courses .classes h4{
+    font-family: ProximaNova-Regular;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  section.fifth-courses .classes a.close-info{
+    font-family: ProximaNova-Regular;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: black;
+    font-size: 18px;
+    opacity: 0.2;
+  }
+  section.fifth-courses .classes p{
+    font-family: ProximaNova-Light;
+    font-size: 13px;
+    line-height: 19px;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+  }
+  section.fifth-courses .classes .focuses, section.fifth-courses .classes .description{
+    min-height: 60px;
+  }
+  section.fifth-courses .classes a.raised{
+    width: 160px;
+    z-index: 3;
+  }
+  section.fifth-courses .classes .pull-right a.raised{
+    z-index: 1;
+    width: 200px;
+    background: #4d4e68;
+    -webkit-box-shadow: 0px 3px 0px #292a42;
+    -moz-box-shadow: 0px 3px 0px #292a42;
+    box-shadow: 0px 3px 0px #292a42;
+  }
+  section.fifth-courses .classes .pull-right a.raised:hover {
+    background-color: #4d4e68;
+  }
+  section.fifth-courses .classes .pull-right a.raised:active {
+    background-color: #292a42;
+    -webkit-box-shadow: 0px 0px 0px #292a42;
+    -moz-box-shadow: 0px 0px 0px #292a42;
+    box-shadow: 0px 0px 0px #292a42;
+    position: relative;
+    top: 3px;
+  }
+  section.fifth-courses .cta{
+    padding: 60px;
+    text-align: center;
+    display: inline-block;
+  }
+  section.fifth-courses .cta h2{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 490px;
+    margin-top: 60px;
+    line-height: 44px;
+    font-size: 44px;
+    font-family: ProximaNova-Light;
+  }
+  section.fifth-courses .az .overview{
+    background-image: url("../img/az-v2.jpg");
+  }
+  section.fifth-courses .cta{
+    background-image: url("../img/cta-v2.jpg")
+  }
+  section.fifth-courses .designing-play .overview{
+    background-image: url("../img/designing-v2.jpg")
+  }
+  section.fifth-courses .ten-ten .overview{
+    background-image: url("../img/tenten-v2.jpg")
+  }
+  section.fifth-courses .world .overview{
+    background-image: url("../img/world-v2.jpg")
+  }
+  section.fifth-courses .solo-studio .overview{
+    background-image: url("../img/solostudio-v2.jpg")
+  }
+  section.fifth-courses .astri{
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  /*section.fifth-courses p.title-paragraph{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-family: ProximaNova-Light;
+    font-size: 23px;
+    color: #191919;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+  section.fifth-courses .title-question{
+    margin-bottom: 10px;
+  }
+  section.fifth-courses .second-row{
+    margin-top: 60px;
+  }
+  section.fifth-courses .class{
+    text-align: left;
+  }
+  section.fifth-courses img{
+    width: 100%;
+  }
+  section.fifth-courses .info{
+    margin-top: 15px;
+  }
+
+  section.fifth-courses h4{
+    font-family: ProximaNova-SemiBold;
+    font-size: 14px;
+    color: #191919;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+  }
+  section.fifth-courses p{
+    font-family: ProximaNova-Regular;
+    font-size: 14px;
+    color: #191919;
+    margin: 0 auto;
+    margin-top: 22px;
+    text-align: left;
+    height: 95px;
+  }
+
+  section.fifth-courses a.raised{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 175px;
+  }
+
+
+  section.fifth-courses .optional-date{
+    margin-top: 20px;
+    text-align: center;
+  }
+  section.fifth-courses .optional-date a{
+    display: block;
+    text-decoration: underline;
+    color: #EB6057;
+  }
+  section.fifth-courses .astri{
+    margin-top: 30px;
+  }*/
+  section.quote{
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: left;
+    background: url('../img/bw-room.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 170px;
+  }
+
+  section.quote h2{
+    font-size: 26px;
+    font-family: ProximaNova-Light;
+    line-height: 31px;
+  }
+
+  section.quote h3{
+    font-size: 19px;
+    font-family: ProximaNova-Light;
+    margin-top: 35px;
+  }
+
+  section.seventh{
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding-bottom: 100px;
+    background: #f5f5f5;
+  }
+  section.seventh .title-paragraph{
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: ProximaNova-Light;
+    font-size: 23px;
+    color: #191919;
+    line-height: 28px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  section.seventh .row img{
+    border-radius: 50%;
+    margin-top: -30px;
+    margin-bottom: -35px;
+    padding: 0;
+    width: 100%
+  }
+  .toggle-description img.border{
+    display: none;
+  }
+  .toggle-description.active img.borderless{
+    display: none;
+  }
+  .toggle-description.active img.border{
+    display: block;
+  }
+  /*.toggle-description.active img.borderless{
+    display: none;
+  }
+  section.seventh .row img.borderless{
+    display: block;
+  }
+  .toggle-description.active img.border{
+    display: block;
+  }
+  section.seventh .row img.border{
+    display: none;
+  }*/
+  section.seventh .row b{
+    display: block;
+    font-family: ProximaNova-Bold;
+    font-size: 14px;
+    color: #191919;
+    line-height: 17px;
+    margin: 0;
+    padding: 0;
+  }
+  section.seventh .row p{
+    font-family: ProximaNova-Regular;
+    font-size: 12px;
+    color: #000000;
+    line-height: 17px;
+    margin: 0;
+    padding: 0;
+  }
+  section.seventh .preview a{
+    display: block;
+    width: 100%;
+  }
+
+  section.seventh .team-description{
+    display: none;
+    background: #fce2d2;
+    padding: 70px;
+    position: relative;
+    margin-top: 25px;
+  }
+  .collin, .cameron, .jana, .mikkel{
+    display: none;
+  }
+  section.seventh .team-description .description-close{
+    font-size: 16px;
+    font-family: ProximaNova-Bold;
+    background: #fce2d2;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
+    margin-left: -5px;
+    color: #EB6057;
+    opacity: 0.2;
+  }
+  section.seventh p.description{
+    width: 100%;
+    max-width: 750px;
+    font-family: ProximaNova-Regular;
+    font-size: 17px;
+    margin: 0 auto;
+    padding: 0;
+    color: #000000;
+    text-align: center;
+    line-height: 23px;
+  }
+  section.seventh .description-footer{
+    margin-top: 40px;
+  }
+  section.seventh .description-footer a{
+    display: inline-block;
+    color: #EB6057;
+    margin-right: 30px;
+    font-size: 14px;
+  }
+
+  section.eighth{
+    width: 100%;
+    text-align: center;
+    background: url('../img/Culture_Illustrations.png') no-repeat;
+    background-color: #4D4E68;
+    background-size: cover;
+    display: block;
+    height: 710px;
+  }
+
+  section.eighth h2{
+    font-family: ProximaNova-Light;
+    font-size: 32px;
+    color: white;
+    line-height: 34px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  section.eighth h2.first{
+    margin-top: 80px;
+  }
+  section.eighth p{
+    width: 40%;
+    margin: 0 auto;
+    font-family: ProximaNova-Light;
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+  }
+  section.eighth p.first{
+    margin-bottom: 45px;
+  }
+  section.eighth img{
+    display: inline-block;
+    margin-top: -55px;
+    -moz-transform:scale(0.35);
+    -webkit-transform:scale(0.35);
+    transform:scale(0.35);
+  }
+
+  section.ninth{
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding-bottom: 50px;
+  }
+  section.ninth ul{
+    margin-top: 60px;
+  }
+  section.ninth li{
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+  }
+  section.ninth li .wrapper{
+    width: 100%;
+    max-width: 295px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+
+  section.ninth li h4{
+    padding: 0;
+    margin: 0;
+    font-family: ProximaNova-Semibold;
+    font-size: 20px;
+    color: #202020;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  section.ninth li p{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #202020;
+    line-height: 19px;
+  }
+
+  footer{
+    background: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+  }
+  footer img{
+    width: 35px;
+  }
+  footer .contact{
+    float: right;
+    display: block;
+    margin-top: 5px;
+    margin-right: 55px;
+  }
+  footer li{
+    font-size: 12px;
+    font-family: "ProximaNova-Light";
+    color: #b6b6b5;
+    padding: 0 10px;
+    line-height: 27px;
+  }
+  footer li a{
+    font-size: 12px;
+    font-family: "ProximaNova-Light";
+    color: #b6b6b5;
+    padding: 0 10px;
+    line-height: 27px;
+  }
+
+  .modal-header{
+    border: none;
+  }
+
+
+  .title-box{
+    font-family: ProximaNova-Regular;
+    color: #2D2D2D;
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+  }
+  .title-box .circleNumber{
+    font-family: ProximaNova-Bold;
+    font-size: 17px;
+    display: inline-block;
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+
+    background: transparent;
+    border: 2px solid #2B2B2B;
+    text-align: center;
+  }
+  .title-box .title.white{
+    color: white;
+  }
+  .title-box .circleNumber.white{
+    border-color: white;
+    color: white;
+  }
+  .title-box .title{
+    display: inline-block;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-size: 12px;
+
+  }
+  .title-box .title.white{
+    color: white;
+  }
+
+  .title-question{
+    font-family: ProximaNova-Light;
+    font-size: 42px;
+    color: black;
+    line-height: 44px;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  .modal-dialog{
+    padding: 30px;
+    width: 760px;
+    margin: 120px auto;
+  }
+  .modal-content{
+    border-radius: 0;
+  }
+  .modal-body{
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .modal-body h1{
+    letter-spacing: 2.64px;
+  }
+  .modal-body h2{
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 26px;
+    font-family: ProximaNova-Light;
+  }
+  .modal-body h3{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  .modal-body a{
+    display: inline-block;
+    margin-top: 35px;
+    text-align: center;
+    background: #EB6057;
+    font-family: ProximaNova-Regular;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 2.6px;
+    line-height: 14px;
+    padding: 13px 25px;
+    width: 240px;
+  }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+ul.inline{
+  list-style: none;
+}
+ul.inline li{
+  display: inline-block;
+}
+
+.half{
+  -moz-transform:scale(0.5);
+  -webkit-transform:scale(0.5);
+  transform:scale(0.5);
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 767px)  {
+  .stickynav{
+    display: none !important;
+  }
+  .stickynav.mobile{
+    display: block !important;
+    padding: 0;
+    height: 52px;
+    background-image: none;
+    background-color: #ff966c;
+  }
+  .navbar-default{
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .navbar-toggle{
+
+  }
+  .navbar-default .navbar-toggle{
+    border-color: transparent;
+  }
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    background-color: transparent;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    padding-left: 35px;
+  }
+  .navbar-default .navbar-nav>li>a{
+    color: white;
+  }
+  .navbar-default .navbar-toggle .icon-bar{
+    background-color: white;
+  }
+  .pink-color{
+    background-color: #ff966c;
+  }
+  .container-fluid{
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .stickynav.mobile .logo img{
+    width: 50px;
+    margin-left: 30px;
+    margin-top: 7px;
+  }
+  header{
+    padding-top: 50px;
+    background-position: 40%;
+  }
+  header .cta{
+    padding: 13px;
+  }
+  header section.title{
+    margin-top: 40%;
+    padding: 0 20px;
+  }
+  header section.title h1{
+    font-size: 40px;
+    line-height: 39px;
+  }
+  header section.title h3{
+    margin-top: 8px;
+    line-height: 22px;
+  }
+  header section.credit{
+    right: 50%;
+    bottom: 5px;
+    margin-right: -57px;
+  }
+  .title-question{
+    font-size: 34px;
+    line-height: 40px;
+    padding: 0 10px;
+  }
+  section.fifth{
+    padding-bottom: 20px;
+  }
+  section.fifth p{
+    margin-bottom: 0;
+  }
+  section.fifth-courses p{
+    height: auto;
+  }
+  section.third p, section.fifth p, section.fourth p, section.quote h2, section.seventh .title-paragraph{
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 20px;
+  }
+  section.fifth-courses .class{
+    margin-bottom: 30px;
+  }
+  section.fifth-courses .second-row{
+    margin-top: 0;
+  }
+  section.fourth{
+    padding-bottom: 55px;
+  }
+  section.fourth img{
+    width: 100%;
+    padding: 0 20px;
+  }
+  section.quote{
+    padding: 20px;
+  }
+  section.quote h3{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  section.seventh{
+    padding-bottom: 60px;
+  }
+  section.seventh .title-paragraph{
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  section.seventh .col-xs-6{
+    margin-bottom: 15px;
+  }
+  section.ninth li{
+    width: 100%;
+    padding: 0 10px;
+  }
+  section.ninth li .wrapper{
+    max-width: 1000px;
+  }
+  footer .contact{
+    margin-right: 0;
+    float: none;
+    display: inline-block;
+    padding-left: 35px;
+    padding-right: 34px;
+  }
+  section.fifth-courses .classes{
+    min-height: 0;
+  }
+  section.fifth-courses .classes .focuses, section.fifth-courses .classes .description{
+    min-height: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 321px)  {
+  header section.title{
+    margin-top: 50px;
+    padding: 0;
+  }
+}
+
+/*TABLET*/
+@media only screen and (min-width: 768px) and (max-width: 992px)  {
+  section.third{
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+  section.third p{
+    padding: 0 30px;
+  }
+  section.quote{
+    padding: 60px;
+  }
+  section.seventh .title-paragraph{
+    padding: 0 60px;
+  }
+  section.ninth li{
+    width: 30%;
+    padding: 0 1%;
+  }
+  section.seventh .row img{
+    margin-bottom: -15px;
+  }
+  section.fifth-courses .classes{
+    min-height: 0;
+  }
+  section.fifth-courses .classes .focuses, section.fifth-courses .classes .description{
+    min-height: 0px;
+  }
+  section.fifth-courses .cta h2{
+    padding-bottom: 50px;
+  }
+
+
+}
+@media only screen and (max-width: 990px)  {
+  section.fifth-courses .cta h2{
+    padding-bottom: 50px;
+  }
+}
+/*MEDIUM*/
+
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

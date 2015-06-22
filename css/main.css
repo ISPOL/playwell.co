@@ -1,25 +1,42 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+nav.navbar{
+	background-image:url("../img/stickynav_back.png");
+	width: 100%;
+	background-size: cover;
+   position: fixed;
+    
+    z-index: 5;
+
+}
+ 
+  .navbar.mobile{
+    display: none !important;
+  }
+  .navbar{
+    padding: 8px 0;
+  }
+  .navbar a{
+    color: white;
+  }
+  .navbar img{
+    width: 50px;
+  }
+  .navbar li{
+    line-height: 3;
+  }
+  .navbar li a{
+    width: 35px;
+    padding: 2px 5px;
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.navbar 
-{background-image:""
+img{
+	width:100%;
+	padding:10%;
 }
