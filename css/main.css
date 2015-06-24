@@ -6,7 +6,7 @@ nav.navbar{
 	width: 100%;
 	background-size: cover;
    position: fixed;
-    
+    font-family: 'ProximaNova-Regular';
     z-index: 5;
 
 }
@@ -16,18 +16,20 @@ nav.navbar{
   }
   .navbar{
     padding: 8px 0;
-  }
-  .navbar a{
-    color: white;
+    
   }
   .navbar img{
+    width:35px;
+  }
+  #logo{
+  	padding:0;
     width: 50px;
   }
   .navbar li{
     line-height: 3;
   }
   .navbar li a{
-    width: 35px;
+  	color:white;
     padding: 2px 5px;
     letter-spacing: 3px;
     font-size: 12px;
