@@ -8,9 +8,7 @@ nav.navbar{
    position: fixed;
     font-family: 'ProximaNova-Regular';
     z-index: 5;
-
 }
- 
   .navbar.mobile{
     display: none !important;
   }
@@ -21,9 +19,12 @@ nav.navbar{
   .navbar img{
     width:35px;
   }
+
   #logo{
   	padding:0;
     width: 50px;
+    margin-left: 30px;
+    margin-top: 7px;
   }
   .navbar li{
     line-height: 3;
@@ -35,10 +36,71 @@ nav.navbar{
     font-size: 12px;
     text-transform: uppercase;
   }
-
-
-
 img{
 	width:100%;
 	padding:10%;
+}
+
+header{
+
+	background: url('../img/the_razor_cliffs.jpg') no-repeat;
+	background-size: cover;
+	height:610px;
+    
+}
+
+#title{
+	text-align:center;
+	color:white;
+}
+#title h1{
+	padding-top:100px;
+}
+#title a{
+	
+	background-color:#CB6057;
+	text-transform:uppercase;
+	color:white;
+	width:230px;
+    letter-spacing: 2.6px;
+    line-height: 14px;
+    margin:0 auto;
+    margin-top: 30px;
+    position: relative;
+    text-decoration: none;
+    background-color: #EB6057;
+    //font-family: ProximaNova-Regular;
+    font-size: 13px;
+    display: block;
+    box-shadow: 0px 3px 0px #CB3C3D;
+    text-align: center;
+    padding: 16px 0px 13px;
+    transition: all 0.1s ease 0s;
+}
+ul.inline {
+    list-style: outside none none;
+}
+ul.inline li {
+    display: inline-block;
+}
+li {
+	font-size:12;
+}
+#join{
+	background: url('../img/ClassesTexture.png') no-repeat;
+	background-size: 100%;
+	background-color:#4D4E68;
+	width:100%;
+}
+#diagram{
+	background: url('../img/PlayWell-Diagram.png') no-repeat;
+	background-color: #FFE3D0;
+	background-size: 100%;
+
+}
+section{
+	margin:0;
+	width:100%;
+	height:800px;
+	max-height:800px;
 }
