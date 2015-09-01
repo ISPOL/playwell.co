@@ -1,5 +1,15 @@
 /* ==========================================================================
-   Author's custom styles
+Global
+   ========================================================================== */
+body {
+	text-align:center;
+}
+img{
+	width:100%;
+	padding:10%;
+}
+/* ==========================================================================
+Navbar
    ========================================================================== */
 nav.navbar{
 	background-image:url("../img/stickynav_back.png");
@@ -36,10 +46,9 @@ nav.navbar{
     font-size: 12px;
     text-transform: uppercase;
   }
-img{
-	width:100%;
-	padding:10%;
-}
+/* ==========================================================================
+Content
+   ========================================================================== */
 
 header{
 
@@ -56,8 +65,8 @@ header{
 #title h1{
 	padding-top:100px;
 }
-#title a{
-	
+#title a, #benefits a{
+
 	background-color:#CB6057;
 	text-transform:uppercase;
 	color:white;
@@ -91,16 +100,70 @@ li {
 	background-size: 100%;
 	background-color:#4D4E68;
 	width:100%;
+	color:white;
+	height:auto;
+	margin: 0 auto;
+	font-size: 23px;
+    line-height: 31px;
 }
+#join p, #join h2, #join h1, #join h3{
+	padding:50px;
+}
+  #join p{
+    display: block;
+    padding-top: 40px;
+    margin-bottom: 30px;
+  }
+  #join h2{
+    font-family: ProximaNova-Regular;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    margin-top: 60px;
+    font-weight: 100;
+  }
+
 #diagram{
-	background: url('../img/PlayWell-Diagram.png') no-repeat;
 	background-color: #FFE3D0;
 	background-size: 100%;
+    padding-bottom: 400px;
+    margin-bottom:100px;
 
+  
 }
-section{
-	margin:0;
-	width:100%;
-	height:800px;
-	max-height:800px;
+.course-takeaway{
+	font-style:italic;
+}
+.description{
+	background-color:#4D4E68;
+	height:400px;
+}
+.numberHolder{
+	color: #2D2D2D;
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+}
+ .numberHolder .circleNumber{
+    //font-family: ProximaNova-Bold;
+    font-size: 17px;
+    display: inline-block;
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+     background: transparent;
+    border: 2px solid #2B2B2B;
+}
+ .title{
+    display: inline-block;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+.icons{
+	width:400px;
+	padding:0px;
 }
